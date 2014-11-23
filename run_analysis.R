@@ -65,4 +65,4 @@ means = dcast(melted , Subject + Activity ~ variable,mean)
 
 ## Write tidy data to space separated text file
 
-write.table(means, file="tidydata.txt", sep = " ")
+write.table(means, file="tidydata.txt", sep = " ", row.name=FALSE)
